@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  font-family: "Prompt", sans-serif;
+}
+
+.game_field {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 800px;
+  height: 800px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 10px 5px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.game_cell {
+  display: inline-block;
+  height: 230px;
+  width: 230px;
+  background: #d9d9d9;
+  border-radius: 35px;
+  margin-top: 23px;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.game_cell:hover {
+  background: #f9f9f9;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 1px #142965;
+}
+.circle {
+  background: #d9d9d9;
+  border: 1em solid #142965;
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+}
+.cross {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  width: 10em;
+  height: 10em;
+  background-color: #142965;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+}
+.game_stat {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  margin-left: 30px;
+  margin-top: 15px;
+  border-radius: 25px;
+  background: #d9d9d9;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 10px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.scoreboard {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.point {
+  padding-left: 50px;
+  color: #142965;
+  font-weight: bold;
+  font-size: 40px;
+}
+td {
+  font-size: 30px;
+  color: black;
+}
+.alert_notification {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 240px;
+  width: 700px;
+  background: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  position: fixed;
+  box-shadow: 3px 5px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn {
+  height: 40px;
+  width: 70px;
+  border: 1px solid #142965;
+  border-radius: 25px;
+  color: #142965;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #142965;
+  color: #fafafa;
+  height: 50px;
+  width: 80px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.now_move {
+  height: 150px;
+  width: 300px;
+  background: #d9d9d9;
+  border-radius: 25px;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  position: absolute;
+  right: 570px;
+  top: 410px;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
