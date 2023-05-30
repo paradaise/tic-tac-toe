@@ -28,13 +28,14 @@ body {
   margin-top: 23px;
   margin-left: 25px;
   cursor: pointer;
-  transition: all 0.5s ease;
   position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 .game_cell:hover {
   background: #f9f9f9;
   border-radius: 50px;
   box-shadow: 2px 2px 2px 1px #142965;
+  transform: rotate(90deg);
 }
 .circle {
   background: #d9d9d9;
@@ -94,6 +95,19 @@ body {
   right: 0;
   position: absolute;
 }
+.now_move {
+  height: 150px;
+  width: 300px;
+  background: #d9d9d9;
+  border-radius: 25px;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  position: absolute;
+  right: 570px;
+  top: 410px;
+  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
+}
 
 .point {
   padding-left: 50px;
@@ -136,19 +150,7 @@ td {
   border-radius: 15px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.now_move {
-  height: 150px;
-  width: 300px;
-  background: #d9d9d9;
-  border-radius: 25px;
-  text-align: center;
-  color: #000000;
-  font-size: 15px;
-  position: absolute;
-  right: 570px;
-  top: 410px;
-  box-shadow: 5px 10px 5px 5px rgba(0, 0, 0, 0.2);
-}
+
 .hide {
   display: none;
 }
