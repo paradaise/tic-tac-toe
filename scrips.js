@@ -95,9 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showEndGameWindow(player, count, k) {
+    field.style.pointerEvents = "none";
     nowMove.innerHTML = "GAME OVER";
     k++;
     count.innerText = `${k}`;
+
     player == "tie"
       ? (winnerId.innerText = `TIE.TRY AGAIN`)
       : (winnerId.innerText = `The winner is: ${player}`);
@@ -107,9 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
       wrapper.classList.remove("show");
 
       btn.addEventListener("click", () => {
+        count.classList.add("animation");
+        // player.classList.add("animation");
         alert.classList.remove("show");
         wrapper.classList.add("show");
         wrapper.classList.remove("hide");
+        field.style.pointerEvents = "auto";
 
         for (let i = 0; i < cell.length; i++) {
           cell[i].innerHTML = "";
@@ -118,8 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
         nowMove.innerHTML = `<h2>${firstPlayer} X</h2>`;
         dataArrCircle.length = 0;
         dataArrCross.length = 0;
-
-        // 2)Вызывать функцию игры, при этом оставлять имена игроков и их очки.
       });
     }, 1000);
   }

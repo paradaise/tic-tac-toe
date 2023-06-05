@@ -157,3 +157,28 @@ td {
 .show {
   display: block;
 }
+
+.animation {
+  animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: fuchsia;
+  }
+  80% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
