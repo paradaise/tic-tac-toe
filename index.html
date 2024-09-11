@@ -11,27 +11,29 @@
   <body>
     <div class="wrapper">
       <div class="game_field"></div>
-      <div class="game_stat">
-        <table class="scoreboard">
-          <tbody>
-            <tr>
-              <td id="first_gamer_id">Player1</td>
-              <td class="point" id="first_count_id">0</td>
-            </tr>
-            <tr>
-              <td id="second_gamer_id">Player2</td>
-              <td class="point" id="second_count_id">0</td>
-            </tr>
-            <tr>
-              <td>Tie</td>
-              <td class="point" id="tie_count_id">0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="now_move">
-        <h2>Now move:</h2>
-        <h2 class="animation" style="font-weight: bold" id="move_now_id"></h2>
+      <div class="dirty_flex">
+        <div class="game_stat">
+          <table class="scoreboard">
+            <tbody>
+              <tr>
+                <td id="first_gamer_id">Player1</td>
+                <td class="point" id="first_count_id">0</td>
+              </tr>
+              <tr>
+                <td id="second_gamer_id">Player2</td>
+                <td class="point" id="second_count_id">0</td>
+              </tr>
+              <tr>
+                <td>Tie</td>
+                <td class="point" id="tie_count_id">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="now_move">
+          <h2>Now move:</h2>
+          <h2 class="animation" style="font-weight: bold" id="move_now_id"></h2>
+        </div>
       </div>
     </div>
     <div class="alert_notification hide">
