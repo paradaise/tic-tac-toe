@@ -1,3 +1,4 @@
+
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
   let isCrossMove = true,
@@ -107,6 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
       alert.classList.add("show");
       wrapper.classList.add("hide");
       wrapper.classList.remove("show");
+      
+      createConfetti(100);
+      showConfetti();
 
       btn.addEventListener("click", () => {
         count.classList.add("animation");
@@ -123,6 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
         nowMove.innerHTML = `<h2>${firstPlayer} X</h2>`;
         dataArrCircle.length = 0;
         dataArrCross.length = 0;
+
+        hideConfetti();
+
       });
     }, 1000);
   }
