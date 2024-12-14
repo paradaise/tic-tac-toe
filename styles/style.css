@@ -20,11 +20,13 @@ body {
 }
 
 .game_field {
+  box-sizing: border-box;
   display: inline-block;
   overflow: hidden;
   padding: 0;
   margin-top: 15px;
   margin-left: 30px;
+  margin-right: 30px;
   width: 800px;
   height: 800px;
   background: #ffffff;
@@ -225,4 +227,39 @@ h2{
   border-radius: 10px;
   animation: confetti 3s linear infinite;
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  .dirty_flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 870px) {
+  .game_field {
+    width: 90%;
+    height: 80vh;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .game_cell {
+    width: 30%;
+    height: 30%;
+    margin: 0;
+  }
 }
