@@ -20,19 +20,19 @@
 
 ### Главное игровое поле
 
-![Игровое поле](img/screenshots/game-main.png)
+![Игровое поле](demo/game_field.png)
 
-### Победа игрока и конфетти
+![Игровой процесс](demo/game_process.png)
 
-![Победа и конфетти](img/screenshots/game-win.png)
+### Модальное окно окончания партии
 
-### Счет и текущий ход
-
-![Счет и ход](img/screenshots/game-score.png)
+![Победа и конфетти](demo/game_over.png)
 
 ### Адаптивная верстка (мобильная версия)
 
-![Мобильная версия](img/screenshots/game-mobile.png)
+![Мобильная версия игровой зоны](demo/adaptive_game_field.png)
+
+![Мобильные эллементы "Счет и ход"](demo/adaptive_game_stats.png)
 
 > **Примечание:** Скриншоты взяты из реального интерфейса игры.
 
